@@ -15,12 +15,12 @@
 
 .nav-logo{
     height:100px;
-    width:280px;
+    width:100px;
 }
 .logo{
-    background-image: url("newlogo.png");
+    /* background-image: url("newlogo.png"); */
     background-size: cover;
-    height:100px;
+    height:10px;
     width:100%;
     margin:40px;
 }
