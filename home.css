@@ -36,3 +36,11 @@
     display:flex;
 /* float:right; */
 }
+.about{
+    padding: 40px;
+    margin-left: auto;
+    /* margin-right:100; */
+    text-align:right;
+    font-size:30px;
+    display:flex;
+}
