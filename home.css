@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    font-family:Arial;
+    border:border-box;
+}
+.navbar{
+    height: 100px;
+    background-color: aliceblue;
+    color:black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-logo{
+    height:100px;
+    width:280px;
+}
+.logo{
+    background-image: url("newlogo.png");
+    background-size: cover;
+    height:100px;
+    width:100%;
+    margin:40px;
+}
+/* .border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border: 2px solid rgb(56, 172, 244);
+} */
+.profile{
+    text-align: right;
+    font-size: 16px;
+    display:flex;
+/* float:right; */
+}
