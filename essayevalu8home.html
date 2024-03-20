@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Essay Evalu8r</title>
+
+<style>body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: linear-gradient(to bottom right, #B026FF, #000); 
+  animation: background-wave 5s ease-in-out infinite;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.heading {
+  color: #fff; /* White for text blending with background */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); /* Slight shadow outline */
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.essay-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black */
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+#essay {
+  width: calc(85% - 4rem); /* Reduce width by 15% from previous calculation */
+  min-height: 500px; /* Increased height for larger text box */
+  padding: 1rem;
+  outline: none; /* Completely remove outline */
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.8); /* White with slight transparency */
+}
+
+button[type="submit"] {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #800080; /* Dark purple */
+  color: #fff; /* White text */
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #a000a0; /* Darker purple on hover */
+}
+
+@keyframes background-wave {
+  0% { background-position: 0 0; } /* Start with purple top left */
+  50% { background-position: 100% 100%; } /* Move towards black bottom right */
+  100% { background-position: 0 0; } /* Repeat animation */
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">Essay Evalu8r</h1>
+    <div class="essay-box">
+      <textarea name="essay" id="essay" placeholder="Paste your essay here"></textarea>
+      <button type="submit">Evaluate</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('essay').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Replace with your AI logic to evaluate the essay and provide feedback
+      const essayText = document.getElementById('essay').value;
+      const feedback = evaluateEssay(essayText); // Replace with your AI function
+
+      // Display the feedback (replace with your feedback display logic)
+      alert(feedback);
+    });
+  </script>
+</body>
+</html>
