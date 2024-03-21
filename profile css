@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    font-family:Arial;
+    border:border-box;
+}
+body {
+
+    background-image: linear-gradient(to bottom right , rgb(1,3,5) 0%, #313845 55%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+  }
+.navbar{
+    height: 100px;
+    background-color: #262626;
+    color:#262626;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-logo{
+    height:80px;
+    width:80px;
+}
+.logo{
+    background-size: cover;
+    height:100px;
+    width:100%;
+    margin:20px;
+}
+.text{
+    border:aqua; 
+    border-width:3px; 
+    border-style:solid ;
+}
+/* .border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border: 2px solid rgb(56, 172, 244);
+} */
+.profile{
+    text-align: left;
+    font-size: 30px;
+    display:flex;
+    float:left;
+    color:white;
+}
+.about{
+    padding: 40px;
+    margin-left: auto;
+    margin-right:1px;
+    text-align:right;
+    font-size:30px;
+    display:flex;
+    color:white;
+    
+}
+.defaultpfp{
+    padding-left: 50px;
+    margin-top: 100px;
+    margin-left:50px
+}
+
+.profile img {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border-radius: 50%; /* To make it round */
+    margin-bottom: 10px;
+    margin-top: 80px;
+    margin-left: 120px;
+}
+
+.profile-info {
+    text-align: center;
+    margin-right:100px;
+    margin-top: 50px;
+    margin-left: 500px;
+    font-size: 40px;
+    color: white;
+}
+
+.leaderboard{
+    color:aqua;
+    text-align:center;
+    margin-right: 750px;
+    font-size: 25px;
+}
+table {
+    border-collapse: collapse;
+    width: 70%; /* Adjust width as needed */
+    margin-left: 500px;
+  }
+  
+  th, td {
+    border: 3px solid aqua;
+
+    padding: 10px;
+    text-align: left;
+    background-color: #f2f2f2;
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+    
+  }
